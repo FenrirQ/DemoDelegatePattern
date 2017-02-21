@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FFEFACDF1E5BD6100087046B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFACDE1E5BD6100087046B /* AppDelegate.swift */; };
-		FFEFACE11E5BD6100087046B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFACE01E5BD6100087046B /* ViewController.swift */; };
+		FFEFACE11E5BD6100087046B /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFACE01E5BD6100087046B /* LabelViewController.swift */; };
 		FFEFACE41E5BD6100087046B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEFACE21E5BD6100087046B /* Main.storyboard */; };
 		FFEFACE61E5BD6100087046B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEFACE51E5BD6100087046B /* Assets.xcassets */; };
 		FFEFACE91E5BD6100087046B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEFACE71E5BD6100087046B /* LaunchScreen.storyboard */; };
+		FFEFACF11E5BD6350087046B /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFACF01E5BD6350087046B /* ButtonViewController.swift */; };
+		FFEFACF31E5BE4BB0087046B /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFACF21E5BE4BB0087046B /* ContainerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFEFACDB1E5BD6100087046B /* delegatePattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegatePattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEFACDE1E5BD6100087046B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFEFACE01E5BD6100087046B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFEFACE01E5BD6100087046B /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		FFEFACE31E5BD6100087046B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFEFACE51E5BD6100087046B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFEFACE81E5BD6100087046B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFEFACEA1E5BD6110087046B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFEFACF01E5BD6350087046B /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		FFEFACF21E5BE4BB0087046B /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				FFEFACDE1E5BD6100087046B /* AppDelegate.swift */,
-				FFEFACE01E5BD6100087046B /* ViewController.swift */,
+				FFEFACE01E5BD6100087046B /* LabelViewController.swift */,
+				FFEFACF01E5BD6350087046B /* ButtonViewController.swift */,
+				FFEFACF21E5BE4BB0087046B /* ContainerVC.swift */,
 				FFEFACE21E5BD6100087046B /* Main.storyboard */,
 				FFEFACE51E5BD6100087046B /* Assets.xcassets */,
 				FFEFACE71E5BD6100087046B /* LaunchScreen.storyboard */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEFACE11E5BD6100087046B /* ViewController.swift in Sources */,
+				FFEFACE11E5BD6100087046B /* LabelViewController.swift in Sources */,
+				FFEFACF11E5BD6350087046B /* ButtonViewController.swift in Sources */,
+				FFEFACF31E5BE4BB0087046B /* ContainerVC.swift in Sources */,
 				FFEFACDF1E5BD6100087046B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +310,7 @@
 				FFEFACEF1E5BD6110087046B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
