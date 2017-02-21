@@ -23,3 +23,11 @@ class LabelViewController: UIViewController {
     }
     
 }
+
+// MARK: -
+
+extension LabelViewController: ButtonViewControllerProtocol {
+    func changeLabelText(with text: String) {
+        label?.text = text
+    }
+}

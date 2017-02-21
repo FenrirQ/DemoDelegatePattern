@@ -27,6 +27,7 @@ class ContainerVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier ?? "" {
@@ -38,6 +39,15 @@ class ContainerVC: UIViewController {
         default:
             return
         }
+        
+        defer {
+            setDelegate()
+        }
+    }
+    
+    func setDelegate() {
+        buttonVC?.delegate = labelVC
+
     }
     
 }

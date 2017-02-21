@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol ButtonViewControllerProtocol: NSObjectProtocol {
+    func changeLabelText(with text: String)
+}
+
+
 class ButtonViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
-    
+    weak var delegate: ButtonViewControllerProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +28,7 @@ class ButtonViewController: UIViewController {
     }
     
     @IBAction func change(_ sender: Any) {
-        
+        delegate?.changeLabelText(with: textField.text ?? "")
     }
     
 }
