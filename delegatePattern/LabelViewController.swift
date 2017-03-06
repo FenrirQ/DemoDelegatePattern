@@ -30,4 +30,8 @@ extension LabelViewController: ButtonViewControllerProtocol {
     func changeLabelText(with text: String) {
         label?.text = text
     }
+    
+    func abc(sender: Any) {
+        print((sender as! UIButton).titleLabel ?? "")
+    }
 }

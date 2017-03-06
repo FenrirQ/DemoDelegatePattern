@@ -8,17 +8,27 @@
 
 import UIKit
 
-protocol ButtonViewControllerProtocol: NSObjectProtocol {
+protocol ButtonViewControllerProtocol: class {
     func changeLabelText(with text: String)
+    func abc(sender: Any)
 }
 
 
 class ButtonViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var button: UIButton!
     
-    weak var delegate: ButtonViewControllerProtocol?
+    weak var delegate: ButtonViewControllerProtocol? {
+        didSet {
+            if let vc = delegate as? LabelViewController {
+                button.addTarget(vc, action: #selector(vc.abc(sender:)) , for: .touchUpInside)
+                
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
