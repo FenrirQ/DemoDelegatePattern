@@ -8,9 +8,10 @@
 
 import UIKit
 
-class LabelViewController: UIViewController {
+class LabelViewController: UIViewController, buttonViewControllerDelegate {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,4 +23,7 @@ class LabelViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func changeLabelText(string: String) {
+        nameLabel.text = string
+    }
 }

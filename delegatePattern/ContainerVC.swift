@@ -38,6 +38,7 @@ class ContainerVC: UIViewController {
         default:
             return
         }
+        buttonVC?.delegate = labelVC
     }
     
 }

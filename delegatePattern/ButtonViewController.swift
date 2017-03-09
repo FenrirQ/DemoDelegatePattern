@@ -8,9 +8,15 @@
 
 import UIKit
 
+
+protocol buttonViewControllerDelegate {
+    func changeLabelText(string: String)
+}
+
 class ButtonViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
+    var delegate : buttonViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +29,7 @@ class ButtonViewController: UIViewController {
     }
     
     @IBAction func change(_ sender: Any) {
-        
+        delegate?.changeLabelText(string: textField.text!)
     }
     
 }
